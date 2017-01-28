@@ -5,7 +5,7 @@ COOKIE='Cookie: x-amzn-dat-gui-client-v=1.24.1314.0; session-id=254-9221301-7971
 CSRF='csrf: --2131660023' 
 
 CMD='{"type":"PauseCommand"}'
-URL='https://pitangui.amazon.com/api/np/command?deviceSerialNumber='$DEVICENUMBER'&deviceType='$DEVICETYPE
+URL='https://layla.amazon.de/api/np/command?deviceSerialNumber='$DEVICENUMBER'&deviceType='$DEVICETYPE
 curl $URL \
 -H "$COOKIE" \
 -H "$CSRF" \
