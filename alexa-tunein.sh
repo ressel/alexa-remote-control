@@ -15,7 +15,7 @@ then
 fi
 #echo "${STATION}"
 
-URL='https://pitangui.amazon.com/api/tunein/queue-and-play?deviceSerialNumber='$DEVICENUMBER'&deviceType='$DEVICETYPE'&guideId='$STATION'&contentType=station&callSign=&mediaOwnerCustomerId='$CUSTOMERID
+URL='https://layla.amazon.com/api/tunein/queue-and-play?deviceSerialNumber='$DEVICENUMBER'&deviceType='$DEVICETYPE'&guideId='$STATION'&contentType=station&callSign=&mediaOwnerCustomerId='$CUSTOMERID
 curl $URL \
 -X POST  \
 -H "$CSRF" \
