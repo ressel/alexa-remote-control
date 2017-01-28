@@ -24,3 +24,5 @@ CMD='{"type":"RepeatCommand","repeat":false}'
 CMD='{"type":"ForwardCommand"}'
 
 CMD='{"type":"RewindCommand"}'
+
+Adapted for me.
