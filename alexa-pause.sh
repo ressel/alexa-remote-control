@@ -9,5 +9,4 @@ URL='https://layla.amazon.de/api/np/command?deviceSerialNumber='$DEVICENUMBER'&d
 curl $URL \
 -H "$COOKIE" \
 -H "$CSRF" \
---data "${CMD}" \
---compressed 
+--data "${CMD}"
