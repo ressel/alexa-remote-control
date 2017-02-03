@@ -19,6 +19,7 @@ fi
 #echo "${STATION}"
 
 URL='https://layla.amazon.de/api/tunein/queue-and-play?deviceSerialNumber='$DEVICENUMBER'&deviceType='$DEVICETYPE'&guideId='$STATION'&contentType=station&callSign=&mediaOwnerCustomerId='$CUSTOMERID
+echo curl $URL -X POST -H "$CSRF" -H "$COOKIE" --compressed
 curl $URL \
 -X POST  \
 -H "$CSRF" \
