@@ -10,6 +10,7 @@ CSRF='csrf: -2131660023'
 
 CMD='{"type":"PauseCommand"}'
 URL='https://layla.amazon.de/api/np/command?deviceSerialNumber='$DEVICENUMBER'&deviceType='$DEVICETYPE
+echo curl $URL -H "$COOKIE" -H "$CSRF" --data "${CMD}"
 curl $URL \
 -H "$COOKIE" \
 -H "$CSRF" \
