@@ -13,7 +13,7 @@ then
 fi
 #echo "${STATION}"
 
-URL='https://'AWSHOST'/api/tunein/queue-and-play?deviceSerialNumber='$DEVICENUMBER'&deviceType='$DEVICETYPE'&guideId='$STATION'&contentType=station&callSign=&mediaOwnerCustomerId='$CUSTOMERID
+URL='https://'$AWSHOST'/api/tunein/queue-and-play?deviceSerialNumber='$DEVICENUMBER'&deviceType='$DEVICETYPE'&guideId='$STATION'&contentType=station&callSign=&mediaOwnerCustomerId='$CUSTOMERID
 echo curl $URL -X POST -H "$CSRF" -H "$COOKIE" --compressed
 curl $URL \
 -X POST  \
