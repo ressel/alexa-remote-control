@@ -12,7 +12,7 @@ then
 fi
 
 VOLUMECMD='{"type":"VolumeLevelCommand","volumeLevel":'$VOLUME'}'
-URL='https://pitangui.amazon.com/api/np/command?deviceSerialNumber='$DEVICENUMBER'&deviceType='$DEVICETYPE
+URL='https://'AWSHOST'/api/np/command?deviceSerialNumber='$DEVICENUMBER'&deviceType='$DEVICETYPE
 curl $URL \
 -H "$COOKIE" \
 -H "$CSRF" \
