@@ -14,7 +14,7 @@ STATION='{"stationToken":"'$SENDER'","createStation":false}'
 echo "${STATION}"
 
 #pandora
-URL='https://pitangui.amazon.com/api/amber/queue-and-play?deviceSerialNumber='$DEVICENUMBER'&deviceType='$DEVICETYPE'&mediaOwnerCustomerId='$CUSTOMERID 
+URL='https://'$AWSHOST/api/amber/queue-and-play?deviceSerialNumber='$DEVICENUMBER'&deviceType='$DEVICETYPE'&mediaOwnerCustomerId='$CUSTOMERID 
 curl $URL \
 -H "$COOKIE" \
 -H "$CSRF" \
