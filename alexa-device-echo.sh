@@ -1,3 +1,4 @@
 #ENV for Echo device
 DEVICENUMBER='90F00718639307F8'
 DEVICETYPE='AB72C64C86AW2'
+./alexa-version.sh
