@@ -8,7 +8,7 @@ STATION=$1
 #Check if parameter is set
 if [ -z "$STATION" ];
 then
-	echo "Station Empty - ./alexa-tunein.sh s16430 "
+	echo "Station Empty - ./alexa-tunein.sh s20291" #SWR1
 	exit
 fi
 #echo "${STATION}"
