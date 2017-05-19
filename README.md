@@ -6,9 +6,11 @@ Please find more details here: https://www.gehrig.info/alexa/Alexa.html
 Every once in a while Amazon updates its software.  Then certain values (especially cookie) will have to be adapted as follows:
 
 On Desktop:
-1. Open Alexa / Music / TuneIn in Chrome browser and select desired channel.
-2. Search for first queue-and-play POST request in F12 Developer Mode.
-3. Copy as cURL (bash)
+1. Open Alexa / Music / TuneIn in Chrome or Firefox browser and select desired channel (in Safari it is hard to copy cookie header)
+2. Search for first queue-and-play POST request in F12 (Mac: Alt-Cmd-I) Developer Mode.
+3. Retrieve request headers csrf and Cookie:
+   - Chrome: Copy as cURL (bash)
+   - Firefox: Copy Request Headers
 4. Manually update CSRF and COOKIE in alexa-version.sh.
    - CSRF='csrf: 1234567890'
    - COOKIE='Cookie: x-amzn-dat-gui-client-v=1.24.2017.0; ...'
