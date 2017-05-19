@@ -10,11 +10,14 @@ On Desktop:
 2. Search for first queue-and-play POST request in F12 Developer Mode.
 3. Copy as cURL (bash)
 4. Manually update CSRF and COOKIE in alexa-version.sh.
+   CSRF='csrf: 1234567890'
+   COOKIE='Cookie: x-amzn-dat-gui-client-v=1.24.2017.0; ...'
 5. Run updateSetEchoCookie.sh to create updated setEchoCookie.sh.
 6. Copy that file to cloudstation/Pass.
 On Smartphone:
 7. In DS Cloud copy Pass/setEchoCookie.tsk.xml to Internal/Tasker/tasks (overwriting whatever is in there already).
 8. In Tasker press Tasks tab long and import setEchoCookie.tsk.xml
+9. In Tasker execute task setEchoCookie.tsk.
 
 More commands - not yet in a script... but easy for DIY:
 
